@@ -18,15 +18,15 @@ class _SuccessState extends State<Success> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Padding(
-        padding:  EdgeInsets.all(width*0.03),
+        padding:  EdgeInsets.all(w*0.03),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              height: height*0.3,
-              width: width*1,
-              margin: EdgeInsets.all(width*0.04),
+              height: h*0.3,
+              width: w*1,
+              margin: EdgeInsets.all(w*0.04),
               decoration: BoxDecoration(
                   image: DecorationImage(image: AssetImage(imageconst.thankyou),fit: BoxFit.fill)
               ),
@@ -41,26 +41,26 @@ class _SuccessState extends State<Success> {
             //   ),
             // ),
             Padding(
-              padding:  EdgeInsets.only(left: width*0.11),
+              padding:  EdgeInsets.only(left: w*0.11),
               child: Container(
-                height: height*0.1,
-                width: width*0.8,
+                height: h*0.1,
+                width: w*0.8,
                 child: Text("Your order will be delivered soon. Thank you for choosing our app!",
                   style: TextStyle(
                       fontWeight: FontWeight.w400,
-                      fontSize: width*0.045,
+                      fontSize: w*0.045,
                       color: Colors.grey
                   ),),
               ),
             ),
             Container(
-              height: height*0.2,
+              height: h*0.2,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    height: height*0.08,
-                    width: width*0.8,
+                    height: h*0.08,
+                    width: w*0.8,
                     decoration: BoxDecoration(
                         color: Colors.brown,
                         boxShadow: [
@@ -71,28 +71,28 @@ class _SuccessState extends State<Success> {
                               color: Colors.brown.withOpacity(0.25)
                           )
                         ],
-                        borderRadius: BorderRadius.circular(width*0.03)
+                        borderRadius: BorderRadius.circular(w*0.03)
                     ),
                     child: Center(
                       child: Text("Track your orders",
                         style: TextStyle(
-                            fontSize: width*0.045,
+                            fontSize: w*0.045,
                             fontWeight: FontWeight.w600,
                             color: Colors.black
                         ),),
                     ),
                   ),
                   Container(
-                    height: height*0.08,
-                    width: width*0.8,
+                    height: h*0.08,
+                    width: w*0.8,
                     decoration: BoxDecoration(
                         border: Border.all(color: Colors.brown),
-                        borderRadius: BorderRadius.circular(width*0.03)
+                        borderRadius: BorderRadius.circular(w*0.03)
                     ),
                     child: Center(
                       child: Text("BACK TO HOME",
                         style: TextStyle(
-                            fontSize: width*0.045,
+                            fontSize: w*0.045,
                             fontWeight: FontWeight.w600,
                             color: Colors.black
                         ),),

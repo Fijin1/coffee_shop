@@ -24,7 +24,7 @@ class _checkOutState extends State<checkOut> {
       appBar:  AppBar(
         centerTitle: true,
         leading: Padding(
-          padding:  EdgeInsets.all(width*0.05),
+          padding:  EdgeInsets.all(w*0.05),
           child: InkWell(
 
               onTap: () {
@@ -35,49 +35,49 @@ class _checkOutState extends State<checkOut> {
         ),
         title:
         Text("Check out",style: GoogleFonts.merriweather(
-            fontSize: width*0.045,
-            fontWeight: FontWeight.w700,
-            color: Colors.black,
+          fontSize: w*0.045,
+          fontWeight: FontWeight.w700,
+          color: Colors.black,
 
         ),),
       ),
       body: Column(
         children: [Padding(
-          padding:  EdgeInsets.all(width*0.05),
+          padding:  EdgeInsets.all(w*0.05),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text("Shipping Address",style: TextStyle(
                   color: Colors.grey,
-                  fontSize: width*0.04
+                  fontSize: w*0.04
               ),),
               SvgPicture.asset(iconconst.editicon,
-                width: width*0.04,
+                width: w*0.04,
                 color:Colors.white,)
             ],
           ),
         ),
           Container(
-            height: height*0.18,
-            width: width*0.9,
+            height: h*0.18,
+            width: w*0.9,
             color: Colors.brown,
             child: Padding(
-              padding:  EdgeInsets.all(width*0.05),
+              padding:  EdgeInsets.all(w*0.05),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text("Fijin",style: TextStyle(
                       fontWeight: FontWeight.w700,
-                      fontSize: width*0.05
+                      fontSize: w*0.05
 
                   ),),
                   Divider(
                     color:Colors.grey.shade100,
-                    height: width*0.1,
+                    height: w*0.1,
                   ),
                   Text("Manjeri Town,Malappuram,Kerala,676123",
                     style: TextStyle(
-                        fontSize: width*0.035,
+                        fontSize: w*0.035,
                         color: Colors.grey
                     ),)
                 ],
@@ -85,31 +85,31 @@ class _checkOutState extends State<checkOut> {
             ),
           ),
           Padding(
-            padding:  EdgeInsets.all(width*0.05),
+            padding:  EdgeInsets.all(w*0.05),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Payment",style: TextStyle(
                     color: Colors.grey,
-                    fontSize: width*0.04
+                    fontSize: w*0.04
                 ),),
                 SvgPicture.asset(iconconst.editicon,
-                  width: width*0.04,
+                  width: w*0.04,
                   color: Colors.white,)
               ],
             ),
           ),
           Container(
-            height: height*0.08,
-            width: width*0.9,
+            height: h*0.08,
+            width: w*0.9,
             decoration: BoxDecoration(
-                color: Colors.white,
+              color: Colors.white,
 
             ),
             child: Row(
               children: [
                 Padding(
-                  padding:  EdgeInsets.all(width*0.05),
+                  padding:  EdgeInsets.all(w*0.05),
                   child: Image.asset(imageconst.upi,
                   ),
                 ),
@@ -120,91 +120,91 @@ class _checkOutState extends State<checkOut> {
             ),
           ),
           Padding(
-            padding:  EdgeInsets.all(width*0.05),
+            padding:  EdgeInsets.all(w*0.05),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Delivery method",style: TextStyle(
                     color: Colors.grey,
-                    fontSize: width*0.04
+                    fontSize: w*0.04
                 ),),
                 SvgPicture.asset(iconconst.editicon,
-                  width: width*0.04,
+                  width: w*0.04,
                   color: Colors.white,)
               ],
             ),
           ),
           Container(
-            height: height*0.08,
-            width: width*0.9,
+            height: h*0.08,
+            width: w*0.9,
             decoration: BoxDecoration(
-                color: Colors.white,
+              color: Colors.white,
 
             ),
             child: Row(
               children: [
                 Padding(
-                  padding:  EdgeInsets.all(width*0.05),
+                  padding:  EdgeInsets.all(w*0.05),
                   child: Image.asset(imageconst.deliveryboy),
                 ),
                 Text("Fast "),
                 Text("(30-45 mints) ",),
               ],),),
           Container(
-            margin: EdgeInsets.all(width*0.03),
-            height: height*0.18,
-            width: width*0.9,
+            margin: EdgeInsets.all(w*0.03),
+            height: h*0.18,
+            width: w*0.9,
             decoration: BoxDecoration(
-                color:Colors.brown,
+              color:Colors.brown,
 
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Padding(
-                  padding:  EdgeInsets.all(width*0.03),
+                  padding:  EdgeInsets.all(w*0.03),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("Order:",style: TextStyle(
                           color: Colors.grey,
-                          fontSize: width*0.045
+                          fontSize: w*0.045
                       ),),
                       Text("\$60.00",
                         style: TextStyle(
-                            fontSize: width*0.045
+                            fontSize: w*0.045
                         ),),
                     ],
                   ),
                 ),
                 Padding(
-                  padding:  EdgeInsets.all(width*0.02),
+                  padding:  EdgeInsets.all(w*0.02),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("Delivery:",style: TextStyle(
                           color: Colors.grey,
-                          fontSize: width*0.045
+                          fontSize: w*0.045
                       ),),
                       Text("\$8.00",
                         style: TextStyle(
-                            fontSize: width*0.045
+                            fontSize: w*0.045
                         ),),
                     ],
                   ),
                 ),
                 Padding(
-                  padding:  EdgeInsets.all(width*0.03),
+                  padding:  EdgeInsets.all(w*0.03),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("Total:",style: TextStyle(
                           color: Colors.grey,
-                          fontSize: width*0.045
+                          fontSize: w*0.045
                       ),),
                       Text("\$100.00",
                         style: TextStyle(
-                            fontSize: width*0.045
+                            fontSize: w*0.045
                         ),),
                     ],
                   ),
@@ -217,17 +217,17 @@ class _checkOutState extends State<checkOut> {
               Navigator.push(context, CupertinoPageRoute(builder: (context) => Success(),));
             },
             child: Container(
-              height: height*0.08,
-              width: width*0.9,
+              height: h*0.08,
+              width: w*0.9,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(width*0.03),
-                  color:Colors.white,
+                borderRadius: BorderRadius.circular(w*0.03),
+                color:Colors.white,
               ),
               child: Center(
                 child: Text("SUBMIT ORDER",
                   style: TextStyle(
                       color:Colors.black,
-                      fontSize: width*0.05
+                      fontSize: w*0.05
                   ),),
               ),
             ),

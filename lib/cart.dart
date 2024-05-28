@@ -20,7 +20,7 @@ class _cartState extends State<cart> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colorconst.white,
+        backgroundColor: Colorconst.white,
         appBar: AppBar(
           backgroundColor: Colors.brown,
           centerTitle: true,
@@ -34,17 +34,17 @@ class _cartState extends State<cart> {
             "My cart",
             style: GoogleFonts.merriweather(
               fontWeight: FontWeight.w700,
-              fontSize: width * 0.05,
+              fontSize: w * 0.05,
               color: Colors.white,
             ),
           ),
         ),
         floatingActionButton: Container(
-          height: height * 0.2,
-          width: width * 1,
+          height: h * 0.2,
+          width: w * 1,
           color: Colors.white,
           child: Padding(
-            padding: EdgeInsets.only(left: width * 0.06, right: width * 0.06),
+            padding: EdgeInsets.only(left: w * 0.06, right: w * 0.06),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -58,20 +58,20 @@ class _cartState extends State<cart> {
                           hintText: "Enter your promo code",
                           hintStyle: TextStyle(
                             fontWeight: FontWeight.w400,
-                            fontSize: width * 0.05,
+                            fontSize: w * 0.05,
                             color: Colors.grey,
                           ),
                           constraints: BoxConstraints(
-                            maxWidth: width * 0.6,
-                            maxHeight: width * 0.1,
+                            maxWidth: w * 0.6,
+                            maxHeight: w * 0.1,
                           )),
                     ),
                     Container(
-                      height: height * 0.055,
-                      width: height * 0.13,
+                      height: h * 0.055,
+                      width: h * 0.13,
                       decoration: BoxDecoration(
                           color: Colors.grey,
-                          borderRadius: BorderRadius.circular(width * 0.03)),
+                          borderRadius: BorderRadius.circular(w * 0.03)),
                       child: Icon(
                         Icons.arrow_forward_ios_outlined,
                         color: Colors.black,
@@ -85,14 +85,14 @@ class _cartState extends State<cart> {
                     Text(
                       "Total:",
                       style: TextStyle(
-                          fontSize: width * 0.05,
+                          fontSize: w * 0.05,
                           fontWeight: FontWeight.w700,
                           color: Colors.grey),
                     ),
                     Text(
                       "\$ 30.00",
                       style: TextStyle(
-                          fontSize: width * 0.05,
+                          fontSize: w * 0.05,
                           fontWeight: FontWeight.w700,
                           color: Colors.white),
                     ),
@@ -107,16 +107,16 @@ class _cartState extends State<cart> {
                         ));
                   },
                   child: Container(
-                    height: height * 0.06,
-                    width: width * 0.6,
+                    height: h * 0.06,
+                    width: w * 0.6,
                     decoration: BoxDecoration(
                         color: Colors.grey,
-                        borderRadius: BorderRadius.circular(width * 0.03)),
+                        borderRadius: BorderRadius.circular(w * 0.03)),
                     child: Center(
                       child: Text(
                         "Check Out",
                         style: TextStyle(
-                          fontSize: width * 0.045,
+                          fontSize: w * 0.045,
                           fontWeight: FontWeight.w600,
                           color: Colors.white,
                         ),
@@ -141,9 +141,9 @@ class _cartState extends State<cart> {
               scrollDirection: Axis.vertical,
               itemBuilder: (context, index) {
                 return Container(
-                  height: height * 0.2,
-                  width: width * 1,
-color: Colors.brown,
+                  height: h * 0.2,
+                  width: w * 1,
+                  color: Colors.brown,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
@@ -172,8 +172,8 @@ color: Colors.brown,
                           // color: Colors.red
                           // ),),
                           Container(
-                            height: height * 0.045,
-                            width: width * 0.35,
+                            height: h * 0.045,
+                            width: w * 0.35,
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
@@ -183,16 +183,16 @@ color: Colors.brown,
                                     setState(() {});
                                   },
                                   child: Container(
-                                    height: height * 0.045,
-                                    width: width * 0.1,
+                                    height: h * 0.045,
+                                    width: w * 0.1,
                                     decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(
-                                            width * 0.03)),
+                                            w * 0.03)),
                                     child: Center(
                                         child: Icon(
-                                      Icons.add,
-                                      color: Colors.white,
-                                    )),
+                                          Icons.add,
+                                          color: Colors.white,
+                                        )),
                                   ),
                                 ),
                                 // Text(
@@ -207,17 +207,17 @@ color: Colors.brown,
                                     setState(() {});
                                   },
                                   child: Container(
-                                    height: height * 0.045,
-                                    width: width * 0.1,
+                                    height: h * 0.045,
+                                    width: w * 0.1,
                                     decoration: BoxDecoration(
                                         color: Colors.white,
                                         borderRadius: BorderRadius.circular(
-                                            width * 0.03)),
+                                            w * 0.03)),
                                     child: Center(
                                         child: Icon(
-                                      Icons.remove,
-                                      color: Colorconst.primarycolor,
-                                    )),
+                                          Icons.remove,
+                                          color: Colorconst.primarycolor,
+                                        )),
                                   ),
                                 ),
                               ],
@@ -254,11 +254,11 @@ color: Colors.brown,
                               );
                             },
                             child: Container(
-                              height: height * 0.06,
-                              width: width * 0.15,
+                              height: h * 0.06,
+                              width: w * 0.15,
                               color: Colors.white,
                               child: Padding(
-                                  padding: EdgeInsets.all(width * 0.025),
+                                  padding: EdgeInsets.all(w * 0.025),
                                   child: Icon(
                                     CupertinoIcons.arrow_up_bin,
                                   )),
@@ -272,7 +272,7 @@ color: Colors.brown,
               },
               separatorBuilder: (context, index) {
                 return SizedBox(
-                  height: height * 0.03,
+                  height: h * 0.03,
                 );
               },
               itemCount: 3,

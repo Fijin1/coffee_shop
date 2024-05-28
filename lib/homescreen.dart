@@ -52,7 +52,7 @@ class _homescreenState extends State<homescreen> {
 
         body:
         Padding(
-          padding: EdgeInsets.only(left: width * 0.03, right: width * 0.03),
+          padding: EdgeInsets.only(left: w * 0.03, right: w * 0.03),
           child: Column(
             children: [
               Text("it's a Great Day For Coffee",
@@ -65,8 +65,8 @@ class _homescreenState extends State<homescreen> {
               ),
               SizedBox(height: 9,),
               Container(
-                height: height * 0.05,
-                width: width * 0.9,
+                height: h * 0.05,
+                width: w * 0.9,
                 child: TextFormField(
                   decoration: InputDecoration(
                       border: OutlineInputBorder(),
@@ -87,10 +87,10 @@ class _homescreenState extends State<homescreen> {
               SizedBox(height: 10),
 
               Container(
-                width: width * 2,
-                height: width * 0.1,
+                width: w * 2,
+                height: w * 0.1,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(width * 0.03),
+                  borderRadius: BorderRadius.circular(w * 0.03),
                   color: Color(0xFF212325),
                 ),
                 child: TabBar(
@@ -99,11 +99,11 @@ class _homescreenState extends State<homescreen> {
                     indicatorColor: Colors.black,
                     tabs: [
                       Tab(child: Text("Hot Coffee", style: TextStyle(
-                          fontSize: width * 0.03),),),
+                          fontSize: w * 0.03),),),
                       Tab(child: Text("Cold Coffee", style: TextStyle(
-                          fontSize: width * 0.03),),),
+                          fontSize: w * 0.03),),),
                       Tab(child: Text("Cappuiccino", style: TextStyle(
-                          fontSize: width * 0.03),),),
+                          fontSize: w * 0.03),),),
 
 
                     ]),
